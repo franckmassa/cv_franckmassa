@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CV Franck Massa</title>
+</head>
+
+<!-- Mise en place de l'espion de scroll. Les liens du menu correspondant passent en blanc
+    dès que l'on scroll sur le contenu  -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- NAVBAR MENU-->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">Moi</a></li>
+                    <li><a href="#quality">Qualités</a></li>
+                    <li><a href="#presentation">Presentation</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <!-- <li><a href="#experiences">Expériences</a></li> -->
+                    <li><a href="#education">Formations</a></li>
+                    <li><a href="#reseauSociaux">Réseaux sociaux</a></li>
+                    <li><a href="#formContact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="container-fluid">
+        <div class="col-xs-8 col-md-4 profile-picture">
+            <img src="assets/images/identity2.jpg" alt="Franck" class="img-circle">
+        </div>
+        <div class="heading">
+            <h1>Franck Massa</h1>
+            <h2>Concepteur Développeur d'Applications</h2>
+            <a href="assets/docs/cvFranckMassa.pdf" target="_blank" class="button1">Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <!-- QUALITY "CAROUSEL" -->
+    <section id="quality">
+        <div class="container">
+            <div class="red-divider"></div>
+            <div class="heading">
+                <h2>Qualités</h2>
+            </div>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h3>Bon relationnel</h3>
+                    </div>
+                    <div class="item">
+                        <h3>Intégrité</h3>
+                    </div>
+                    <div class="item">
+                        <h3>Esprit d'équipe</h3>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRESENTATION -->
+    <section id="presentation" class="container">
+        <div class="red-divider"></div>
+        <div class="heading">
+            <h2>Présentation</h2>
+        </div>
+        <div>
+            <p>
+                Après avoir passé  29 ans dans l’industrie, passionné  par les nouvelles technologies, j’ai choisi de me
+                reconvertir dans la conception et le développement informatique.
+                Mes priorités seront de répondre aux exigences des clients en terme de qualité  et de sécurité tout en
+                respectant les délais.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <!-- On met une ligne séparatrice red-divider -->
+        <div class="red-divider"></div>
+        <div class="heading">
+            <h2>Compétences</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <!-- 1ère colonne -->
+                <div class="col-md-6">
+                    <!-- On utilise la class progress -->
+                    <div class="progress">
+                        <!-- On utilise les attributs aria-value pour le progarmme malentendant -->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>HTML / CSS / Bootstrap</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>PHP / Symfony 3/4</h5>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>MySQL / MySQL Workbench</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>UML / Visual Paradigm</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>WordPress / Elementor</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2ème colonne -->
+                <div class="col-md-6">
+                    <!-- On utilise la class progress -->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>JavaScript</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>NetBeans / VS Code</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <!-- On utilise les attributs aria-value pour le progarmme malentendant -->
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>Git / Github / Gitlab</h5>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5>Linux Ubuntu / Mac OSX</h5>
+                        </div>
+                    </div>
+                    <!--<div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <h5></h5>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>Conception et développement</h2>
+                <!-- <h3></h3> -->
+            </div>
+            <ul class="timeline">
+                <li>
+                    <!-- On choisi le glyphicon-briefcase pour la malette -->
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                    <!-- On utilise la class inverted pour mettrre le panel à droite de la timeline -->
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3 class="text-left"><a href="http://www.franckmassa.com" target="_blank" class="btn btn-danger">Voir le site</a> BDWorld</h3>
+                                <!-- On utilise le tag small pour réduire le glyphicon-time -->
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"> 2020</small></p>
+                                <p>Site BDWorld</p>
+                                <p>Vente de bandes dessinées</p>
+                                <p>Technologies utilisées: WordPress / PHP / CSS</p>
+                                <p>Plugins: Elementor, WooCommerce, UpdraftPlus</p>
+                                <p>Création d'un Thème enfant sur le Thème StoreFront</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- On choisi le glyphicon-briefcase pour la malette -->
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>SPL6S</h3>
+                                <!-- On utilise le tag small pour réduire le glyphicon-time -->
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"> 2019-2020</small></p>
+                                <p>Site SPL6S</p>
+                                <p>Système de suivi de projets pour la communauté Lean Six Sigma (code visible sur Github)
+                                </p>
+                                <p>Technologies utilisées: HTML, CSS, Bootstrap, jQuery, PHP, SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- On choisi le glyphicon-briefcase pour la malette -->
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                    <!-- On utilise la class inverted pour mettrre le panel à droite de la timeline -->
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>CV numérique</h3>
+                                <!-- On utilise le tag small pour réduire le glyphicon-time -->
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"> 2019</small></p>
+                                <p>Création d'un CV numérique (code visible sur Github)</p>
+                                <p>Technologies utilisées: HTML, CSS, Bootstrap, jQuery</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- On choisi le glyphicon-briefcase pour la malette -->
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Snake</h3>
+                                <!-- On utilise le tag small pour réduire le glyphicon-time -->
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"> 2019</small></p>
+                                <p>Jeu (code visible sur Github)</p>
+                                <p>Technologies utilisées: JavaScript, Canvas</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <li>
+                    <!-- On choisi le glyphicon-briefcase pour la malette -->
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                    <!-- On utilise la class inverted pour mettrre le panel à droite de la timeline -->
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Restaurant Burger</h3>
+                                <!-- On utilise le tag small pour réduire le glyphicon-time -->
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"> 2019</small></p>
+                                <p>Partie Front-end du site et Back office (code visible sur Github)</p>
+                                <p>Technologies utilisées: HTML, CSS, Bootstrap, PHP, SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li>
+                    <!-- On choisi le glyphicon-briefcase pour la malette -->
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                    <div class="timeline-panel-container">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Top 5 des meilleures actrices</h3>
+                                <!-- On utilise le tag small pour réduire le glyphicon-time -->
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"> 2019</small></p>
+                                <p>Partie Front-end du site (code visible sur Github)</p>
+                                <p>Technologies utilisées: HTML, CSS, jQuery</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <li>
+                    <!-- On choisi le glyphicon-briefcase pour la malette -->
+                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
+                    <!-- On utilise la class inverted pour mettrre le panel à droite de la timeline -->
+                    <div class="timeline-panel-container-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>Hôpital</h3>
+                                <!-- On utilise le tag small pour réduire le glyphicon-time -->
+                                <p class="text-muted"><small class="glyphicon glyphicon-time"> 2018</small></p>
+                                <p>Gestion des rendez-vous pour les patients d'un hôpital (code visible sur Github)</p>
+                                <p>Technologies utilisées: HTML, CSS, Bootstrap, PHP, SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section> 
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="container-fluid">
+            <div class="red-divider"></div>
+            <div class="heading">
+                <h2>Formations</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="education-block">
+                        <h5>2019 - 2020</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Centre de formation GRETA - Compiègne (Oise)</h3>
+                        <h4>Titre professionnel "concepteur développeur d'applications" de niveau 6<br><br> obtenu le 06/07/2020</h4>
+                        <div class="red-divider"></div>
+                        <p>Formation au centre - 1070 heures</p>
+                        <p>Formation en entreprise - 420 heures</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="education-block">
+                        <h5>2019 - 2020</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Formation video Udemy.com</h3>
+                        <h4 class="text-left"><a href="assets/docs/certif_udemy_web_dev_complet.pdf" target="_blank" class="btn btn-danger">Certificat</a> Développeur web (37 h.)</h4>    
+                        <h4 class="text-left"><a href="assets/docs/certif_udemy_symfony4-1.pdf" target="_blank" class="btn btn-danger">Certificat</a> Symfony 4 (11 h.)</h4>    
+                        <h4 class="text-left"><a href="" target="_blank" class="btn btn-danger disabled">Certificat</a> Symfony 3 (4 h.)</h4>
+                        <h4 class="text-left"><a href="assets/docs/certif_udemy_sql.pdf" target="_blank" class="btn btn-danger">Certificat</a> SQL (2,5 h.)</h4>    
+                        <h4 class="text-left"><a href="assets/docs/certif_udemy_git_github.pdf" target="_blank" class="btn btn-danger">Certificat</a> Git / Github (3,5 h.)</h4>
+                        <h4 class="text-left"><a href="assets/docs/certif_udemy_wordpress_A-Z.pdf" target="_blank" class="btn btn-danger">Certificat</a> WordPress (9 h.)</h4>    
+                        <h4 class="text-left"><a href="assets/docs/certif_udemy_worpress_elementor.pdf" target="_blank" class="btn btn-danger">Certificat</a> Elementor (4 h.)</h4>   
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="education-block">
+                        <h5>2018</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Centre de formation E2N - Noyon (Oise)</h3>
+                        <h4>Titre professionnel "Développeur Logiciel" de niveau 5<br><br> obtenu le 12/12/2018</h4>
+                        <div class="red-divider"></div>
+                        <p>Formation de 840 heures</p>
+                        <p>35 heures par semaine</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="education-block">
+                        <h5>2004</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Sun Chemical - Thourotte (Oise)</h3>
+                        <h4>Certificat Green Belt Six Sigma</h4>
+                        <div class="red-divider"></div>
+                        <h5>2002</h5>
+                        <h3>CRAM Nord Picardie</h3>
+                        <h4>AST Ergonomie</h4>
+                        <div class="red-divider"></div>
+                        <h5>1984</h5>
+                        <h3>Lycée Charles de Bovelles - Noyon (Oise)</h3>
+                        <h4>BEP Electrotechnique</h4>
+                        <div class="red-divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEAUX SOCIAUX -->
+    <section id="reseauSociaux">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>Réseaux Sociaux</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">
+                        <img src="assets/images/linkedin.jpg" alt="linkedin" />
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="https://github.com/franckmassa?tab=stars" target="_blank">
+                        <img src="assets/images/github.jpg" alt="github" />
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="thumbnail" href="https://gitlab.com/dashboard/projects" target="_blank">
+                        <img src="assets/images/gitlab.jpg" alt="gitlab" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FORMULAIRE CONTACT -->
+    <section id="formContact">
+        <div class="container">
+            <div class="red-divider"></div>
+            <div class="heading">
+                <h2>Contact</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <form id="contact-form" action="" method="post" role="form ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname">Prénom<span class="white"> *</span></label>
+                                <input type="text" id="firstname" name="firstname" class="form-control"
+                                    placeholder="Votre prénom">
+                                <p class="comments"></p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="name">Nom<span class="white"> *</span></label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom">
+                                <p class="comments"></p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email">Email<span class="white"> *</span></label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Votre email">
+                                <p class="comments"></p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone">Téléphone<span class="white"></span></label>
+                                <input type="tel" id="phone" name="phone" class="form-control"
+                                    placeholder="Votre téléphone">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message<span class="white"> *</span></label>
+                                <textarea name="message" id="message" name="message" class="form-control"
+                                    placeholder="Votre message" idmessage cols="30" rows="10"></textarea>
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <p><strong><span class="white">* </span>Ces informations sont requises</strong></p>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="button2" value="Envoyer">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <a href="#about">
+            <span class=" glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- <h3>1 heure de Paris</h3>
+                    <img class="" src="assets/images/paris.png" alt="Paris"> -->
+                </div>
+                <div class="col-sm-4">
+                    <ul class="address">
+                        <div class="heading">
+                            <h3>Coordonnées</h3>
+                        </div>
+                        <li>Franck Massa</li>
+                        <li>45 rue Saint Germain</li>
+                        <li>60200 Compiègne</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="contact">
+                        <div class="heading">
+                            <h3>Contact</h3>
+                        </div>
+                        <div>
+                            <li class="glyphicon glyphicon-envelope"> massafranck@gmail.com</li>
+                        </div>
+                        <div>
+                            <li class="glyphicon glyphicon-phone"> 0601871351</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

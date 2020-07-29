@@ -1,0 +1,660 @@
+/* GENERAL */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+}
+
+section {
+    padding: 45px 0 80px 0;
+}
+
+section .heading {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+section .heading h2,
+h3 {
+    text-transform: uppercase;
+}
+
+.red-divider {
+    width: 100px;
+    height: 3px;
+    background: #e92a19;
+    margin: 0 auto;
+}
+
+.white-divider {
+    width: 100px;
+    height: 3px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+
+/* MENU */
+
+.navbar {
+    background: #e92a19;
+    font-size: 12px;
+    /* On espace les lettres pour plus de clareté */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar li a {
+    /* En mettant !important, le css est prioritaire sur bootstrap */
+    color: #fff !important;
+}
+
+
+/* Quand on passera sur le lien ou quand le lien sera actif, la couleur du background passera en blanc
+et les lettres en rouges */
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    /* Attention de ne pas oublier la virgule */
+    color: #e92a19 !important;
+    background: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-style: none;
+}
+
+.icon-bar {
+    background: #fff !important;
+}
+
+
+/* ABOUT */
+
+#about {
+    padding-top: 100px;
+    background: linear-gradient(#e92a19, #a3c1f5, #ecb203);
+}
+
+.profile-picture {
+    text-align: center;
+    margin: 0 auto;
+    /* On annule le float qui a été mis automatiquement avec l'utilisation du col-md-4 */
+    float: none;
+}
+
+#about .heading h1 {
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 60px;
+}
+
+#about .heading h2,
+h3 {
+    color: #fff;
+}
+
+.button1 {
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    text-transform: capitalize;
+    border: 2px solid white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 8px;
+    transition: all 0.6s ease-in 0s;
+}
+
+
+/* animation au passage de la souris */
+
+.button1:hover {
+    background: white;
+    color: #e92a19;
+    /* On enlève le soulignement */
+    text-decoration: none;
+}
+
+
+/* PRESENTATION */
+
+#presentation p {
+    color: #fff;
+    text-align: justify;
+    background: #e92a19;
+    padding: 40px;
+    margin-bottom: -40px;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ecb203;
+    text-shadow: 2px 2px 1px #000;
+}
+
+#presentation .heading h2 {
+    color: #e92a19;
+    text-transform: uppercase;
+}
+
+
+/* QUALITY "CAROUSEL"*/
+
+#quality {
+    background: #fff;
+}
+
+#quality .heading h2 {
+    color: #e92a19;
+    text-transform: uppercase;
+}
+
+.carousel {
+    background: #a3c1f5;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ecb203;
+}
+
+.carousel-indicators li {
+    border-color: 5px#e92a19;
+    background: #ecb203;
+}
+
+#myCarousel .item {
+    padding: 60px 30px;
+}
+
+#myCarousel .item h3 {
+    color: #fff;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    /* On met le background-image à none pour éviter d'avoir une teinte sur chaque chevron */
+    background-image: none;
+    color: #e92a19;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+/* SKILLS */
+
+#skills {
+    background: #fff;
+}
+
+.heading h2 {
+    color: #e92a19;
+}
+
+
+/* c'est la barre grise */
+
+.progress {
+    height: 100%;
+    margin: 30px 20px;
+    background: #ddd;
+}
+
+
+/* C'est la barre couleur */
+
+.progress-bar {
+    background: #a3c1f5;
+}
+
+#skills .progress h5 {
+    text-shadow: 1px 1px 1px #000;
+    /*text-align: left;*/
+}
+
+
+/* PROJECTS */
+
+#projects {
+    background: linear-gradient(#e92a19, #a3c1f5, #ecb203);
+}
+
+#projects .heading h2,
+h3 {
+    color: #fff;
+}
+
+
+/* #projects .heading h3{
+    color: #fff;
+} */
+
+.timeline-heading h3 {
+    color: #e92a19;
+    font-size: 20px;
+}
+
+.timeline {
+    padding: 30px 10px;
+    position: relative;
+}
+
+
+/* Utilisation de la pseudo class before pour surfer avant l'élément */
+
+.timeline:before {
+    /* la ligne commence à 0 du haut et se termine à 0 du bas */
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    /* Avec la pseudo class :before, il faut ajouter du contenu pour pouvoir afficher la ligne */
+    content: "";
+    width: 5px;
+    background-color: #333;
+    /* On place la ligne à la moitié de la div */
+    left: 50%;
+    /* Pour avoir le milieu parfait, on décale la ligne de la moitié de sa largeur vers la gauche 5/2 = 2.5px */
+    margin-left: -2.5px;
+}
+
+
+/* On utilise le signe > pour indiquer le direct parent ul */
+
+.timeline>li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+/* Utilisation de la pseudo class after pour surfer après l'élément */
+
+.timeline>li:after {
+    /* On nettoie les float */
+    clear: both;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    /* Avec la pseudo class :before :after il faut ajouter du contenu pour pouvoir afficher */
+    content: "";
+    display: table;
+}
+
+.timeline li .timeline-badge {
+    color: #e92a19;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.timeline-panel-container {
+    width: 50%;
+    float: left;
+}
+
+.timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+}
+
+.timeline-panel {
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    border: 1px solid #d4d4d4;
+    border-radius: 7px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px grba(0, 0, 0, 0.175);
+    background: #fff;
+}
+
+.timeline-panel-container-inverted .timeline-panel {
+    float: left;
+    margin-left: 40px;
+}
+
+
+/* Avec la pseudo class :after, il faut ajouter du contenu pour pouvoir afficher les triangles */
+
+.timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline-panel-container-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+
+/* EXPERIENCES */
+
+#experiences {
+    padding-top: 100px;
+    background: white;
+}
+
+#experiences .heading h2 {
+    color: #e92a19;
+}
+
+#experiences .heading h3 {
+    color: #e92a19;
+}
+
+#experiences .timeline-panel {
+    background: linear-gradient(#e92a19, #a3c1f5, #ecb203);
+}
+
+#experiences .timeline-heading h2 {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#experiences .timeline-heading p {
+    color: #000;
+}
+
+#experiences .timeline-heading h3 {
+    color: #fff;
+}
+
+
+/* Avec la pseudo class :after, il faut ajouter du contenu pour pouvoir afficher les triangles */
+
+#experiences .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #ecb203;
+    border-right: 0 solid #ecb203;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+#experiences .timeline-panel-container-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+
+/* EDUCATION */
+
+#education {
+    background: #fff;
+}
+
+#education .heading h2 {
+    color: #e92a19;
+}
+
+.education-block {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background: #a3c1f5;
+    border-radius: 10px;
+    /* border: 2px solid #ecb203; */
+    box-shadow: 0 0 10px #ecb203;
+    margin-bottom: 20px;
+}
+
+.education-block h3 {
+    margin-bottom: 20px;
+    /* text-transform: capitalize; */
+    font-size: 20px;
+}
+
+.education-block h4 {
+    color: #e92a19;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.education-block h5 {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.education-block .glyphicon {
+    font-size: 40px;
+}
+
+.education-block p {
+    font-weight: bold;
+}
+
+.education-block .red-divider {
+    margin-bottom: 20px;
+}
+
+
+/* reseauSociaux */
+
+#reseauSociaux {
+    background: linear-gradient(#e92a19, #a3c1f5, #ecb203);
+}
+
+#reseauSociaux .heading h2 {
+    color: #fff;
+}
+
+#reseauSociaux .thumbnail img {
+    width: 100%;
+    height: 100%;
+    /* On met un filtre noir et blanc sur les images du protfolio */
+    filter: grayscale(100%);
+    /* On met le webkit pour google */
+    -webkit-filter: 100%;
+}
+
+#reseauSociaux .thumbnail img:hover {
+    /* On désactive le filtre noir et blanc au passage de la souris */
+    filter: none;
+    -webkit-filter: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #e92a19;
+    padding: 20px 0 40px;
+    color: #000;
+}
+
+footer h3 {
+    text-transform: capitalize;
+}
+
+footer .glyphicon-chevron-up {
+    font-size: 25px;
+    margin: 20px;
+    color: #fff;
+    /* On met la hauteur du chevron plus grande que l'élément pour éviter le jeu au passage de la souris */
+    height: 30px;
+}
+
+footer .glyphicon-chevron-up:hover {
+    /* Au passage de la souris, le chevron grossis légèrement pour montrer qu'il y a une action possible */
+    font-size: 28px;
+}
+
+.address li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.contact li {
+    list-style: none;
+    font-size: 16px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+    /* QUALITY "CAROUSEL"*/
+    .carousel {
+        width: 90%;
+    }
+    /* PRESENTATION */
+    #presentation p {
+        text-align: left;
+        padding: 40px;
+        margin-bottom: -40px;
+    }
+    /* PROJECTS */
+    .timeline:before {
+        display: none;
+    }
+    .timeline>li {
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .timeline>li:after {
+        display: none;
+    }
+    .timeline>li:before,
+    .timeline>li:after {
+        display: block;
+    }
+    .timeline li .timeline-badge {
+        display: none;
+    }
+    .timeline-panel-container {
+        width: 100%;
+    }
+    .timeline-panel-container-inverted {
+        width: 100%;
+    }
+    .timeline-panel {
+        width: 100%;
+        margin-right: 0;
+    }
+    .timeline-panel-container-inverted .timeline-panel {
+        margin-left: 0;
+    }
+    .timeline-panel:after {
+        display: none;
+    }
+    /* EXPERIENCES */
+    #experiences .timeline-panel:after {
+        display: none;
+    }
+}
+
+/* FORMULAIRE CONTACT */
+#formContact{
+    /* margin: 70px 0px; */
+    background: #fff;
+} 
+#contact-form {
+    font-size: 20px;
+    background: #a3c1f5;
+    padding: 40px;
+    border-radius: 10px;
+}
+.white {
+    color: #fff;
+    font-size: 26px;
+}
+.form-control {
+    height: 50px;
+    font-size: 18px;
+}
+.comments {
+    font-style: italic;
+    font-size: 18px;
+    color: #d82c2e;
+    /* permet de garder la place du message d'erreur s'il n'y a pas d'erreur */
+    height: 25px;
+}
+#contact-form input[type=submit] {
+    margin: 40px auto 0px;
+    display: block;
+}
+.thank-you {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+#contactForm{
+    background: #a3c1f5;
+}
+.button2 {
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    text-transform: capitalize;
+    border: 2px solid #ddd;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 50px;
+    background: #E4B31B; 
+    border-radius: 5px;
+    transition: all 0.3s ease-in 0s;
+}
+
+/* animation au passage de la souris */
+
+.button2:hover {
+    background: white;
+    color: #e92a19;
+    /* On enlève le soulignement */
+    text-decoration: none;
+}
